@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+			video{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				transition: all 1s ease-in-out;
+			}
+			p{
+				/* height: 0px; */
+				line-height: .8;
+				overflow: hidden;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				transition: all 1s ease-in-out;
+				font-size: 30px;
+				transform-origin: left bottom;
+				transform: scaleY(0);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="">
+			
+		</div>
+		<video class="bjVideo" src="img/video.mp4" autoplay loop muted ></video>
+		<p class="c">CURRENT</p>
+		<script type="text/javascript">
+			setTimeout(()=>{
+				let c=document.getElementsByClassName("c")[0];
+				let bjVideo=document.getElementsByClassName("bjVideo")[0];
+				c.style.transform="scaleY(28)";
+				setTimeout(()=>{
+					c.style.bottom="96vh";
+					c.style.transform="scaleY(1)";
+					bjVideo.style.height=0;
+				},1200)
+			},5000)
+		</script>
+	</body>
+
+</html>

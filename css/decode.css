@@ -1,0 +1,66 @@
+.decode-text {
+  width: 100%;
+  font-size: 24px;
+  word-spacing: -.5em;
+  /* text-align: center; */
+}
+.space {
+  display: inline-block;
+  width: 10px;
+}
+.text-animation {
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  text-transform: uppercase;
+  line-height: 1.5;
+  &:before {
+    content: "_";
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent;
+    width: 0;
+    height: 1.2em;
+    -webkit-transform: translate(-50%, -55%);
+    -ms-transform: translate(-50%, -55%);
+    transform: translate(-50%, -55%);
+  }
+
+  &.state-1 {
+    &:before {
+      width: 1px;
+	  content: "";
+    }
+  }
+  &.state-2 {
+    &:before {
+      width: 0.3em;
+    }
+  }
+  &.state-3 {
+    color: #fff;
+    &:before {
+      width: 0;
+    }
+  }
+}
+
+// demo styles
+#refresh {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+/* @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono); */
+div {
+  font-family: "Roboto Mono";
+  font-weight: 200;
+}
+body {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+}

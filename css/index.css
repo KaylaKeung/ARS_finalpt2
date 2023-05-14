@@ -1,0 +1,372 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a,a:hover,a:active{
+	color: #fff;
+	text-decoration: none;
+}
+@keyframes mydeamon
+{
+            0% {
+            opacity: 1;
+          }
+          
+          100% {
+            opacity: 0;
+          }
+}
+.box{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	overflow-y: auto;
+	padding: 0 10px;
+	box-sizing: border-box;
+	background: #000000;
+	color: #fff;
+	font-family: "Roboto Mono Light";
+	padding-bottom: 30px;
+	/* min-width: 1200px; */
+}
+.circle{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	display: inline-block;
+}
+.smallC{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #fff;
+	margin-right: 10px;
+}
+.title{
+	font-size: 128px;
+	font-weight: normal;
+	display: flex;
+	align-items: center;
+	letter-spacing: 10px;
+	/* -webkit-text-stroke: 0.5px;
+	-webkit-text-stroke-color: #000; */
+}
+.videoBox{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+	margin-top: 70px;
+	height: 27vw;
+}
+.videoBox img{
+	width: 50%;
+	position: relative;
+	left: -100vw;
+	top: 0;
+	transition: all 1s ease-in-out;
+}
+.videoBox .decode-box{
+	width: 43%;
+	padding: 0px 0px 0px 47px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.text-right{
+	text-align: right;
+}
+.conBox{
+	padding: 0 30px;
+	margin-top: 120px;
+}
+.cTitle{
+	font-weight: normal;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.cTitle .decode-text{
+	font-size:80px;
+}
+.introBox{
+	width: 80%;
+}
+.introBox>div{
+	padding-left: 30px;
+}
+.introBox>.decode-text{
+	font-size: 36px;
+}
+.conItem{
+	padding-left: 30px;
+	font-size: 24px;
+	margin-bottom: 80px;
+}
+.itemConBox{
+	padding-left: 110px;
+	position: relative;
+	z-index: 100;
+	cursor: pointer;
+}
+.titleBox{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 50px;
+	margin-bottom: 15px;
+}
+.titleBox img{
+	height: 40px;
+	width: auto;
+}
+.titleBox p{
+	padding: 0 10px;
+	line-height: 50px;
+	margin: 0 5px;
+}
+.titleBox p.show{
+	background: #fff;
+	color: #000;
+}
+.itemConBox>p{
+	width: 60vw;
+}
+.enter{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url(../img/enter-black.png) no-repeat right bottom;
+	background-size: cover;
+	cursor: pointer;
+}
+.enter:hover{
+	animation: mydeamon .2s infinite;
+}
+.enterShow{
+	font-style: italic;
+	margin-top: 15px;
+	padding-left: 110px;
+	position: relative;
+	font-size: 20px;
+	display: none;
+	/* -webkit-text-stroke: 1px #000; */
+	text-shadow: 2px 2px 4px #000;
+}
+.enterShow span{
+	background: rgba(255,255,255,.3);
+	display: inline-block;
+}
+/* .enterShow>span,.enterShow>p{
+	position: relative;
+	z-index: 100;
+	width: 40vw;
+} */
+/* .enterShow img{
+	position: absolute;
+	left: 25%;
+	top: -15vw;
+	width: 100vw;
+	height: auto;
+} */
+.space1{
+	width: 4em;
+}
+.space2{
+	width: 2em;
+}
+.space3{
+	width: 1em;
+}
+.space4{
+	width: 5.78em;
+}
+.space5{
+	width: 9.89em;
+}
+.space6{
+	width: 7.58m;
+}
+.space7{
+	width: 11em;
+}
+.space8{
+	width: 12.4em;
+}
+.space9{
+	width: 8.78em;
+}
+.enterContent{
+	width: 40vw;
+	font-size: 16px;
+	position: relative;
+	z-index: 100;
+}
+.enterContent span{
+	background: rgba(255,255,255,.3);
+}
+.enterShow img{
+	padding-left:100vw;
+	transition: all 1s ease-in-out;
+}
+.enterShow .eliza{
+	position: absolute;
+	top: 0.5vw;
+	left: 56%;
+	width: 40vw;
+	height: auto;
+}
+.enterShow .kc{
+	position: absolute;
+	top: -18vw;
+	left: 34%;
+	width: 90vw;
+	height: auto;
+}
+.enterShow .alice{
+	position: absolute;
+	top: 10vw;
+	left: 56%;
+	width: 40vw;
+	height: auto;
+}
+.enterShow .sc{
+	position: absolute;
+	top: 0vw;
+	left: 56%;
+	width: 40vw;
+	height: auto;
+}
+.enterShow .chatgpt{
+	position: absolute;
+	top: -18vw;
+	left: 36%;
+	width: 85vw;
+	height: auto;
+}
+.arrow{
+	width: 100%;
+	overflow: hidden;
+}
+.enterShow1{
+	height: 380px;
+}
+.enterShow2{
+	height: 560px;
+}
+.enterShow3{
+	height: 780px;
+}
+.enterShow4{
+	height: 200px;
+}
+.enterShow5{
+	height: 780px;
+}
+.bjVideo{
+	width: 100vw;
+	height: 100vh;
+}
+.toScaleY{
+	width: 100vw;
+	height: 100vh;
+	transition: all 1s ease-in-out;
+	position: relative;
+}
+.toScaleY img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 1s ease-in-out;
+}
+.title{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 50px 0 30px;
+	transition: all 1s ease-in-out;
+	transform-origin: left bottom;
+	line-height: .8;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	box-sizing: border-box;
+}
+.resourBox{
+	font-size: 40px;
+}
+.t3{
+	font-size: 32px;
+	margin-top: 100px;
+}
+#marquee{
+	/* display: flex; */
+	/* flex-wrap: nowrap; */
+}
+.marqueeContent{
+	width: 2500em;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.gb{
+	width: 3px;
+	height: 18px;
+	margin-bottom: -2px;
+	background: #fff!important;
+	animation: mydeamon .2s infinite;
+}
+.resourcesBox{
+	margin-top: 150px;
+}
+@media screen and (max-width: 1200px) {
+	.cTitle{
+		font-size: 30px;
+	}
+	.decode-text{
+		font-size: 18px;
+	}
+	.conItem{
+		font-size: 14px;
+	}
+	.enter{
+		width: 15px;
+		height: 15px;
+	}
+	.enterContent{
+		font-size: 12px;
+	}
+	.enterShow{
+		font-size: 12px;
+	}
+	.enterShow1{
+		height: 280px;
+	}
+	.enterShow2{
+		height: 420px;
+	}
+	.enterShow3{
+		height: 540px;
+	}
+	.enterShow4{
+		height: 100px;
+	}
+	.enterShow5{
+		height: 520px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.cTitle{
+		font-size: 24px;
+	}
+	.decode-text{
+		font-size: 14px;
+	}
+	.conItem{
+		font-size: 14px;
+	}
+	.enter{
+		width: 10px;
+		height: 10px;
+	}
+}
